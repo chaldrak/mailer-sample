@@ -2,3 +2,5 @@
 <h4>name: <%= @contact.name %></h4>
 <h4>Confirmation du contenu de la demande</h4>
 <p>content: <%= @contact.content %></p>
+<p>Url: <%= link_to 'welcome', contact_url(@contact.id) %></p>
+<p><%= image_tag attachments['ror.jpg'].url, alt: "ruby on rails", width: 150  %></p>
